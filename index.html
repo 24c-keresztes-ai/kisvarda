@@ -1,0 +1,294 @@
+
+                <html>
+                <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                    <script src="https://cdn.tailwindcss.com"></script>
+                    <script>
+                        window.FontAwesomeConfig = {
+                            autoReplaceSvg: 'nest', // Options: 'nest', 'remove', 'replace'
+                        };
+                    </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <style>
+                    </style>
+                    <script>
+                    tailwind.config = {
+                    theme: {
+                        extend: {
+                        colors: {
+                            primary: {"50":"#fafafa","100":"#f5f5f5","200":"#e5e5e5","300":"#d4d4d4","400":"#a3a3a3","500":"#737373","600":"#525252","700":"#404040","800":"#262626","900":"#171717","950":"#0a0a0a"}
+                        }
+                        }
+                    }
+                    }
+                </script>
+                </head>
+
+                <body>
+                    <header id="header" class="flex items-center justify-between px-8 py-4 bg-white border-b border-neutral-200">
+                        <div class="flex items-center space-x-8">
+                         <div class="flex items-center">
+                          <i class="fa-solid fa-landmark text-2xl text-neutral-800 mr-3"></i>
+                          <span class="text-xl text-neutral-800">Városi Portál</span>
+                         </div>
+                         <nav class="flex items-center space-x-6">
+                          <a href="#" class="text-neutral-700 hover:text-neutral-900">Főoldal</a>
+                          <a href="#" class="text-neutral-700 hover:text-neutral-900">Önkormányzat</a>
+                          <a href="#" class="text-neutral-700 hover:text-neutral-900">Szolgáltatások</a>
+                          <a href="#" class="text-neutral-700 hover:text-neutral-900">Hírek és Blog</a>
+                          <a href="#" class="text-neutral-700 hover:text-neutral-900">Rólunk</a>
+                         </nav>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                         <button class="text-neutral-700 hover:text-neutral-900">
+                          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                         </button>
+                         <button class="px-4 py-2 bg-neutral-800 text-white rounded hover:bg-neutral-900">
+                          Kapcsolat
+                         </button>
+                        </div>
+                       </header>
+                       
+                       <main id="main-content">
+                        <section id="hero-section" class="relative w-full h-[600px] bg-neutral-800">
+                         <div class="absolute inset-0 bg-neutral-900 flex items-center justify-center">
+                          <div class="text-center text-white max-w-4xl px-8">
+                           <h1 class="text-5xl mb-6">Üdvözöljük Városunkban</h1>
+                           <p class="text-xl mb-8 text-neutral-300">Kapcsolódási pont az önkormányzati szolgáltatásokhoz, információkhoz és közösségi élethez</p>
+                           <div class="flex items-center justify-center space-x-4">
+                            <button class="px-6 py-3 bg-white text-neutral-800 rounded hover:bg-neutral-100">
+                             Szolgáltatások felfedezése
+                            </button>
+                            <button class="px-6 py-3 bg-transparent border-2 border-white text-white rounded hover:bg-white hover:text-neutral-800">
+                             Tudjon meg többet
+                            </button>
+                           </div>
+                          </div>
+                         </div>
+                        </section>
+                       
+                        <section id="quick-links-section" class="py-12 px-8 bg-white">
+                         <div class="max-w-7xl mx-auto">
+                          <div class="grid grid-cols-4 gap-6">
+                           <div class="border border-neutral-200 rounded-lg p-6 hover:border-neutral-400 transition-colors">
+                            <div class="w-12 h-12 bg-neutral-200 rounded-lg flex items-center justify-center mb-4">
+                             <i class="fa-solid fa-user-tie text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Polgármesteri Hivatal</h3>
+                            <p class="text-sm text-neutral-600 mb-4">Ismerje meg polgármesterünket és a város vezetését</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">További információ →</a>
+                           </div>
+                       
+                           <div class="border border-neutral-200 rounded-lg p-6 hover:border-neutral-400 transition-colors">
+                            <div class="w-12 h-12 bg-neutral-200 rounded-lg flex items-center justify-center mb-4">
+                             <i class="fa-solid fa-users text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Városi Közgyűlés</h3>
+                            <p class="text-sm text-neutral-600 mb-4">Képviselők és ülések időpontjai</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">Közgyűlés megtekintése →</a>
+                           </div>
+                       
+                           <div class="border border-neutral-200 rounded-lg p-6 hover:border-neutral-400 transition-colors">
+                            <div class="w-12 h-12 bg-neutral-200 rounded-lg flex items-center justify-center mb-4">
+                             <i class="fa-solid fa-file-lines text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Rendeletek</h3>
+                            <p class="text-sm text-neutral-600 mb-4">Önkormányzati szabályzatok és rendeletek</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">Részletek →</a>
+                           </div>
+                       
+                           <div class="border border-neutral-200 rounded-lg p-6 hover:border-neutral-400 transition-colors">
+                            <div class="w-12 h-12 bg-neutral-200 rounded-lg flex items-center justify-center mb-4">
+                             <i class="fa-solid fa-chart-bar text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Nyilvános Adatok</h3>
+                            <p class="text-sm text-neutral-600 mb-4">Városi statisztikák és nyílt adatok</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">Adatok megtekintése →</a>
+                           </div>
+                          </div>
+                         </div>
+                        </section>
+                       
+                        <section id="blog-section" class="py-16 px-8 bg-neutral-50">
+                         <div class="max-w-7xl mx-auto">
+                          <div class="flex items-center justify-between mb-10">
+                           <div>
+                            <h2 class="text-3xl text-neutral-800 mb-2">Legfrissebb Hírek és Közlemények</h2>
+                            <p class="text-neutral-600">Legyen naprakész a város eseményeivel kapcsolatban</p>
+                           </div>
+                           <a href="#" class="px-6 py-3 bg-neutral-800 text-white rounded hover:bg-neutral-900">
+                            Összes bejegyzés
+                           </a>
+                          </div>
+                          
+                          <div class="grid grid-cols-3 gap-8">
+                           <article class="bg-white rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 transition-colors">
+                            <div class="w-full h-48 bg-neutral-300 flex items-center justify-center">
+                             <span class="text-white text-sm">Városi Közgyűlés</span>
+                            </div>
+                            <div class="p-6">
+                             <div class="flex items-center space-x-2 mb-3">
+                              <span class="px-3 py-1 bg-neutral-100 rounded text-xs text-neutral-700">Önkormányzat</span>
+                              <span class="text-sm text-neutral-500">2025. március 15.</span>
+                             </div>
+                             <h3 class="text-xl mb-3 text-neutral-800">A közgyűlés jóváhagyta az új közösségi központ projektjét</h3>
+                             <p class="text-neutral-600 mb-4 text-sm">A városi közgyűlés egyhangúlag megszavazta egy új, modern közösségi központ építését a belvárosban...</p>
+                             <a href="#" class="text-sm text-neutral-800 hover:underline">Tovább →</a>
+                            </div>
+                           </article>
+                       
+                           <article class="bg-white rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 transition-colors">
+                            <div class="w-full h-48 bg-neutral-400 flex items-center justify-center">
+                             <span class="text-white text-sm">Közszolgáltatások</span>
+                            </div>
+                            <div class="p-6">
+                             <div class="flex items-center space-x-2 mb-3">
+                              <span class="px-3 py-1 bg-neutral-100 rounded text-xs text-neutral-700">Szolgáltatások</span>
+                              <span class="text-sm text-neutral-500">2025. március 12.</span>
+                             </div>
+                             <h3 class="text-xl mb-3 text-neutral-800">Új online építési engedélyezési rendszer indult</h3>
+                             <p class="text-neutral-600 mb-4 text-sm">A lakosok mostantól online is benyújthatják építési engedélykérelmeiket, gyorsítva az ügyintézést...</p>
+                             <a href="#" class="text-sm text-neutral-800 hover:underline">Tovább →</a>
+                            </div>
+                           </article>
+                       
+                           <article class="bg-white rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 transition-colors">
+                            <div class="w-full h-48 bg-neutral-500 flex items-center justify-center">
+                             <span class="text-white text-sm">Közösségi Események</span>
+                            </div>
+                            <div class="p-6">
+                             <div class="flex items-center space-x-2 mb-3">
+                              <span class="px-3 py-1 bg-neutral-100 rounded text-xs text-neutral-700">Események</span>
+                              <span class="text-sm text-neutral-500">2025. március 8.</span>
+                             </div>
+                             <h3 class="text-xl mb-3 text-neutral-800">Idén áprilisban visszatér a Tavaszi Fesztivál</h3>
+                             <p class="text-neutral-600 mb-4 text-sm">Jegyezzék fel a dátumot! Április 20-án ismét megrendezésre kerül a népszerű Tavaszi Fesztivál...</p>
+                             <a href="#" class="text-sm text-neutral-800 hover:underline">Tovább →</a>
+                            </div>
+                           </article>
+                          </div>
+                         </div>
+                        </section>
+                       
+                        <section id="featured-section" class="py-16 px-8 bg-white">
+                         <div class="max-w-7xl mx-auto">
+                          <div class="grid grid-cols-2 gap-12">
+                           <div>
+                            <div class="w-full h-80 bg-neutral-300 rounded-lg mb-6 flex items-center justify-center">
+                             <span class="text-white">Városi Nevezetességek</span>
+                            </div>
+                            <h2 class="text-2xl mb-3 text-neutral-800">Fedezze fel városunk történelmi látnivalóit</h2>
+                            <p class="text-neutral-600 mb-4">Ismerje meg városunk gazdag örökségét és különleges látnivalóit – a történelmi épületektől a modern látványosságokig.</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">Látnivalók →</a>
+                           </div>
+                       
+                           <div>
+                            <div class="w-full h-80 bg-neutral-400 rounded-lg mb-6 flex items-center justify-center">
+                             <span class="text-white">Testvérvárosok</span>
+                            </div>
+                            <h2 class="text-2xl mb-3 text-neutral-800">Testvérvárosi Program</h2>
+                            <p class="text-neutral-600 mb-4">Tudjon meg többet nemzetközi kapcsolatainkról és kulturális csereprogramjainkról.</p>
+                            <a href="#" class="text-sm text-neutral-800 hover:underline">Kapcsolatok →</a>
+                           </div>
+                          </div>
+                         </div>
+                        </section>
+                       
+                        <section id="history-section" class="py-16 px-8 bg-neutral-800 text-white">
+                         <div class="max-w-7xl mx-auto">
+                          <div class="grid grid-cols-2 gap-12 items-center">
+                           <div>
+                            <h2 class="text-3xl mb-4">Városunk Gazdag Történelme</h2>
+                            <p class="text-neutral-300 mb-6">1856-os alapítása óta városunk egy kis kereskedelmi állomásból virágzó nagyvárossá fejlődött. Fedezze fel a történeteket, embereket és eseményeket, amelyek formálták közösségünket.</p>
+                            <div class="space-y-4">
+                             <div class="flex items-start space-x-3">
+                              <i class="fa-solid fa-circle-check text-xl mt-1"></i>
+                              <div>
+                               <h4 class="mb-1">Történelmi Megőrzés</h4>
+                               <p class="text-sm text-neutral-300">Építészeti örökségünk védelme</p>
+                              </div>
+                             </div>
+                             <div class="flex items-start space-x-3">
+                              <i class="fa-solid fa-circle-check text-xl mt-1"></i>
+                              <div>
+                               <h4 class="mb-1">Kulturális Örökség</h4>
+                               <p class="text-sm text-neutral-300">Sokszínű hagyományaink ünneplése</p>
+                              </div>
+                             </div>
+                             <div class="flex items-start space-x-3">
+                              <i class="fa-solid fa-circle-check text-xl mt-1"></i>
+                              <div>
+                               <h4 class="mb-1">Közösségi Archívum</h4>
+                               <p class="text-sm text-neutral-300">Történelmi dokumentumok és fotók elérése</p>
+                              </div>
+                             </div>
+                            </div>
+                            <a href="#" class="inline-block mt-6 px-6 py-3 bg-white text-neutral-800 rounded hover:bg-neutral-100">
+                             Történelmünk megismerése
+                            </a>
+                           </div>
+                           <div class="w-full h-96 bg-neutral-700 rounded-lg flex items-center justify-center">
+                            <span class="text-neutral-400">Történelmi Idővonal</span>
+                           </div>
+                          </div>
+                         </div>
+                        </section>
+                       
+                        <section id="contact-info-section" class="py-16 px-8 bg-neutral-50">
+                         <div class="max-w-7xl mx-auto">
+                          <div class="text-center mb-12">
+                           <h2 class="text-3xl text-neutral-800 mb-3">Látogasson el a Városházára</h2>
+                           <p class="text-neutral-600">Örömmel állunk rendelkezésére</p>
+                          </div>
+                          <div class="grid grid-cols-3 gap-8">
+                           <div class="bg-white border border-neutral-200 rounded-lg p-8 text-center">
+                            <div class="w-16 h-16 bg-neutral-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                             <i class="fa-solid fa-location-dot text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Cím</h3>
+                            <p class="text-neutral-600 text-sm">123 Kacsajtosi utca<br/>Városháza<br/>Kisvárda, 2400</p>
+                           </div>
+                       
+                           <div class="bg-white border border-neutral-200 rounded-lg p-8 text-center">
+                            <div class="w-16 h-16 bg-neutral-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                             <i class="fa-solid fa-phone text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Telefon</h3>
+                            <p class="text-neutral-600 text-sm">Központ: +3650129878<br/>Vészhelyzet: 112<br/></p>
+                           </div>
+                       
+                           <div class="bg-white border border-neutral-200 rounded-lg p-8 text-center">
+                            <div class="w-16 h-16 bg-neutral-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                             <i class="fa-solid fa-clock text-2xl text-neutral-700"></i>
+                            </div>
+                            <h3 class="text-lg mb-2">Nyitvatartás</h3>
+                            <p class="text-neutral-600 text-sm">Hétfő – Péntek<br/>8:00 – 17:00<br/>Hétvégén zárva</p>
+                           </div>
+                          </div>
+                         </div>
+                        </section>
+                       </main>
+                       
+                       <footer id="footer" class="bg-neutral-900 text-white py-12 px-8">
+                        <div class="max-w-7xl mx-auto">
+                         <div class="grid grid-cols-5 gap-8 mb-8">
+                          <div>
+                           <h4 class="mb-4">Önkormányzat</h4>
+                           <ul class="space-y-2 text-sm text-neutral-300">
+                            <li><a href="#" class="hover:text-white">Polgármesteri Hivatal</a></li>
+                            <li><a href="#" class="hover:text-white">Városi Közgyűlés</a></li>
+                            <li><a href="#" class="hover:text-white">Osztályok</a></li>
+                            <li><a href="#" class="hover:text-white">Választott
+   <div class="flex items-center space-x-4">
+    <a href="#" class="text-neutral-400 hover:text-white"><i class="fa-brands fa-facebook text-xl"></i></a>
+    <a href="#" class="text-neutral-400 hover:text-white"><i class="fa-brands fa-twitter text-xl"></i></a>
+    <a href="#" class="text-neutral-400 hover:text-white"><i class="fa-brands fa-instagram text-xl"></i></a>
+    <a href="#" class="text-neutral-400 hover:text-white"><i class="fa-brands fa-youtube text-xl"></i></a>
+   </div>
+  </div>
+ </div>
+</footer>
+
+                        </body>
+                        </html>
+                        
