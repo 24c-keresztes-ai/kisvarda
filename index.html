@@ -52,6 +52,9 @@
     .btn-primary { background: linear-gradient(90deg,#6d28d9,#4c1d95); color: white; }
     .btn-outline { border: 2px solid rgba(255,255,255,0.18); color: white; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    a{
+      color: #06b6d4;
+    }
   </style>
 </head>
 <body class="antialiased text-neutral-800">
@@ -63,11 +66,11 @@
         <span class="text-lg font-semibold">Kisvárda</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-neutral-700" aria-label="Fő navigáció">
-        <a href="#services" class="hover:text-neutral-900">Szolgáltatások</a>
-        <a href="#news" class="hover:text-neutral-900">Hírek</a>
-        <a href="#about" class="hover:text-neutral-900">Rólunk</a>
-        <a href="#history" class="hover:text-neutral-900">Történet</a>
-        <a href="#contact" class="hover:text-neutral-900">Kapcsolat</a>
+        <a href="#services" class="hover:text-purple-500">Szolgáltatások</a>
+        <a href="#news" class="hover:text-purple-500">Hírek</a>
+        <a href="#about" class="hover:text-purple-500">Rólunk</a>
+        <a href="#history" class="hover:text-purple-500">Történet</a>
+        <a href="#contact" class="hover:text-purple-500">Kapcsolat</a>
       </nav>
       <div class="flex items-center gap-3">
         <button id="menu-toggle" class="md:hidden p-2" aria-label="Mobil menü megnyitása"><i class="fa-solid fa-bars"></i></button>
@@ -97,12 +100,12 @@
       <div class="max-w-6xl mx-auto px-6 text-center text-white relative z-10">
         <div class="chip mb-4 inline-flex">Kisvárda · Hivatalos</div>
         <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">Üdvözöljük városunkban</h1>
-        <p class="mt-4 text-lg text-white/90 max-w-2xl mx-auto">Kapcsolódási pont az önkormányzati szolgáltatásokhoz, információkhoz és közösségi élethez — gyorsan és egyszerűen.</p>
+        <p class="mt-4 text-lg text-white/90 max-w-2xl mx-auto">Kapcsolódási pont az önkormányzati szolgáltatásokhoz, információkhoz és közösségi élethez gyorsan és egyszerűen.</p>
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#services" class="px-6 py-3 bg-white text-brand rounded-md font-semibold shadow hover:scale-[1.02] transition-transform">Szolgáltatások</a>
           <button onclick="openModal()" class="px-6 py-3 btn-outline rounded-md hover:bg-white hover:text-brand transition-colors">Kapcsolatfelvétel</button>
         </div>
-        <div class="mt-8 text-sm text-white/80">Gyors linkek: <a href="#mayor" class="underline">Polgármester</a> · <a href="#council" class="underline">Közgyűlés</a></div>
+        <div class="mt-8 text-sm text-white/80">Gyors linkek: <a href="#team" class="underline">Polgármester</a></div>
       </div>
       <div class="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 120" class="w-full" preserveAspectRatio="none" aria-hidden="true">
@@ -115,76 +118,25 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-4 reveal">Szolgáltatások</h2>
         <p class="text-neutral-600 mb-8 reveal">Gyors hozzáférés a legfontosabb városi ügyekhez.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="#contact">
           <div class="p-6 bg-white rounded-lg shadow-sm transform transition card-hover reveal">
             <div class="w-12 h-12 bg-brand/10 text-brand rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-user-tie"></i></div>
             <h3 class="font-semibold mb-2">Polgármesteri Hivatal</h3>
             <p class="text-sm text-neutral-600 mb-3">Ügyintézés, bejelentések és hivatalos információk.</p>
-          </div>
+          </div></a>
+          <a href="#contact">
           <div class="p-6 bg-white rounded-lg shadow-sm transform transition card-hover reveal" style="transition-delay:.05s">
             <div class="w-12 h-12 bg-brand/10 text-brand rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-users"></i></div>
             <h3 class="font-semibold mb-2">Városi Közgyűlés</h3>
             <p class="text-sm text-neutral-600 mb-3">Jegyzőkönyvek, ülések és döntések.</p>
-          </div>
-          <div class="p-6 bg-white rounded-lg shadow-sm transform transition card-hover reveal" style="transition-delay:.1s">
-            <div class="w-12 h-12 bg-brand/10 text-brand rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-file-lines"></i></div>
-            <h3 class="font-semibold mb-2">Rendeletek</h3>
-            <p class="text-sm text-neutral-600 mb-3">Helyi jogszabályok és rendeletek gyűjteménye.</p>
-          </div>
+          </div></a>
+          <a href="#history">
           <div class="p-6 bg-white rounded-lg shadow-sm transform transition card-hover reveal" style="transition-delay:.15s">
             <div class="w-12 h-12 bg-brand/10 text-brand rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-chart-bar"></i></div>
             <h3 class="font-semibold mb-2">Nyilvános Adatok</h3>
             <p class="text-sm text-neutral-600 mb-3">Statisztikák, költségvetés és nyilvántartások.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="news" class="py-16 px-6 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex items-center justify-between mb-6">
-          <div>
-            <h2 class="text-3xl font-bold reveal">Legfrissebb Hírek</h2>
-            <p class="text-neutral-600 reveal">Legyen naprakész a város eseményeivel kapcsolatban.</p>
-          </div>
-          <div class="marquee w-1/2 text-sm text-neutral-700" aria-hidden="true">
-            <div>Városi Közgyűlés: új fejlesztési terv · Tavaszi Fesztivál: programok és helyszínek · Új online ügyintézés elindult</div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article class="border rounded-lg overflow-hidden reveal">
-            <div class="h-44 overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop" alt="Közgyűlés ülés" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold mb-2">A közgyűlés jóváhagyta az új központ projektjét</h3>
-              <p class="text-sm text-neutral-600 mb-3">A városi közgyűlés egyhangúlag megszavazta a beruházást, amely a helyi szolgáltatásokat erősíti és munkahelyeket teremt.</p>
-
-            </div>
-          </article>
-
-          <article class="border rounded-lg overflow-hidden reveal" style="transition-delay:.05s">
-            <div class="h-44 overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Online ügyintézés" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold mb-2">Új online építési engedélyezési rendszer</h3>
-              <p class="text-sm text-neutral-600 mb-3">A lakosok mostantól online is benyújthatják kérelmeiket, gyorsabb ügyintézés és átlátható státusz követés várható.</p>
-
-            </div>
-          </article>
-
-          <article class="border rounded-lg overflow-hidden reveal" style="transition-delay:.1s">
-            <div class="h-44 overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop" alt="Fesztivál" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold mb-2">Tavaszi Fesztivál visszatér</h3>
-              <p class="text-sm text-neutral-600 mb-3">Április 20-án ismét megrendezésre kerül a városi fesztivál, gazdag programkínálattal, helyi előadókkal és kézműves vásárral.</p>
-
-            </div>
-          </article>
+          </div></a>
         </div>
       </div>
     </section>
@@ -214,7 +166,102 @@
         </div>
       </div>
     </section>
-
+    <section id="news" class="py-16 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <h2 class="text-3xl font-bold reveal">Legfrissebb Hírek</h2>
+            <p class="text-neutral-600 reveal">Legyen naprakész a város eseményeivel kapcsolatban.</p>
+          </div>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- News 1 -->
+          <article class="border rounded-lg overflow-hidden reveal">
+            <div class="h-44 overflow-hidden">
+              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop" alt="Közgyűlés ülés" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold mb-2">A közgyűlés jóváhagyta az új központ projektjét</h3>
+              <p class="text-sm text-neutral-600 mb-3">A városi közgyűlés egyhangúlag megszavazta a beruházást, amely a helyi szolgáltatásokat erősíti és munkahelyeket teremt.</p>
+              <button onclick="openModal('newsModal1')" class="text-brand underline">További részletek</button>
+            </div>
+          </article>
+    
+          <!-- News 2 -->
+          <article class="border rounded-lg overflow-hidden reveal" style="transition-delay:.05s">
+            <div class="h-44 overflow-hidden">
+              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Online ügyintézés" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold mb-2">Új online építési engedélyezési rendszer</h3>
+              <p class="text-sm text-neutral-600 mb-3">A lakosok mostantól online is benyújthatják kérelmeiket, gyorsabb ügyintézés és átlátható státusz követés várható.</p>
+              <button onclick="openModal('newsModal2')" class="text-brand underline">További részletek</button>
+            </div>
+          </article>
+    
+          <!-- News 3 -->
+          <article class="border rounded-lg overflow-hidden reveal" style="transition-delay:.1s">
+            <div class="h-44 overflow-hidden">
+              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop" alt="Fesztivál" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold mb-2">Tavaszi Fesztivál visszatér</h3>
+              <p class="text-sm text-neutral-600 mb-3">Április 20-án ismét megrendezésre kerül a városi fesztivál, gazdag programkínálattal, helyi előadókkal és kézműves vásárral.</p>
+              <button onclick="openModal('newsModal3')" class="text-brand underline">További részletek</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    
+      <!-- Modal 1 -->
+      <div id="newsModal1" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">A közgyűlés jóváhagyta az új központ projektjét</h3>
+            <button onclick="closeModal('newsModal1')" class="text-neutral-500">&times;</button>
+          </div>
+          <img class="object-cover w-full h-64 mb-4" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop" alt="Közgyűlés ülés" />
+          <p>A városi közgyűlés egyhangúlag megszavazta a beruházást, amely a helyi szolgáltatásokat erősíti és munkahelyeket teremt. A projekt célja a város modernizálása és a közösségi terek fejlesztése.</p>
+        </div>
+      </div>
+    
+      <!-- Modal 2 -->
+      <div id="newsModal2" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">Új online építési engedélyezési rendszer</h3>
+            <button onclick="closeModal('newsModal2')" class="text-neutral-500">&times;</button>
+          </div>
+          <img class="object-cover w-full h-64 mb-4" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Online ügyintézés" />
+          <p>A lakosok mostantól online is benyújthatják kérelmeiket, gyorsabb ügyintézés és átlátható státusz követés várható. Az új rendszer célja az adminisztráció egyszerűsítése.</p>
+        </div>
+      </div>
+    
+      <!-- Modal 3 -->
+      <div id="newsModal3" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">Tavaszi Fesztivál visszatér</h3>
+            <button onclick="closeModal('newsModal3')" class="text-neutral-500">&times;</button>
+          </div>
+          <img class="object-cover w-full h-64 mb-4" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop" alt="Fesztivál" />
+          <p>Április 20-án ismét megrendezésre kerül a városi fesztivál, gazdag programkínálattal, helyi előadókkal és kézműves vásárral. Ne hagyja ki az év legnagyobb eseményét!</p>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('flex');
+      }
+    
+      function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+        document.getElementById(id).classList.remove('flex');
+      }
+    </script>
     <section id="history" class="py-16 px-6 bg-white">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-6 reveal">Részletes történelmi idővonal</h2>
@@ -279,15 +326,15 @@
         <p class="text-neutral-600 mb-6 reveal">Azok, akik a város szolgálatában dolgoznak.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
           <div class="p-6 bg-neutral-50 rounded-lg shadow reveal">
-            <div class="h-44 bg-neutral-200 rounded mb-4 overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://tse1.mm.bing.net/th/id/OIP.l4Q7MLctpwo-4CU9BXgm9QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Leleszi Tibor" />
+            <div class="h-50 bg-neutral-200 rounded mb-4 overflow-hidden">
+              <img class="object-cover w-full h-full gallery-grid" src="https://www.kisvarda.hu/wp-content/uploads/2025/04/polgm.-foto.png" alt="Leleszi Tibor" />
             </div>
             <h3 class="font-semibold">Leleszi Tibor</h3>
             <p class="text-sm text-neutral-600">Polgármester</p>
           </div>
           <div class="p-6 bg-neutral-50 rounded-lg shadow reveal" style="transition-delay:.03s">
-            <div class="h-44 bg-neutral-200 rounded mb-4 overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://tse1.mm.bing.net/th/id/OIP.oz721b30vEh_s7OBWRIFvQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dr. Kiséry-Harcsa Anita" />
+            <div class="h-50 bg-neutral-200 rounded mb-4 overflow-hidden">
+              <img class="object-cover w-full h-full gallery-grid" src="https://tse1.mm.bing.net/th/id/OIP.oz721b30vEh_s7OBWRIFvQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dr. Kiséry-Harcsa Anita" />
             </div>
             <h3 class="font-semibold">Dr. Kiséry-Harcsa Anita</h3>
             <p class="text-sm text-neutral-600">Jegyző</p>
@@ -302,15 +349,11 @@
         <div class="space-y-4">
           <details class="faq-item bg-white p-4 rounded shadow reveal">
             <summary class="font-semibold">Hogyan intézhetem ügyeimet online?</summary>
-            <div class="mt-2 text-sm text-neutral-600">Lépjen a Szolgáltatások menüpontra, és válassza az online ügyintézést. Regisztráció után hozzáférhet űrlapokhoz és státuszokhoz.</div>
-          </details>
-          <details class="faq-item bg-white p-4 rounded shadow reveal" style="transition-delay:.03s">
-            <summary class="font-semibold">Hol találom a városi rendeleteket?</summary>
-            <div class="mt-2 text-sm text-neutral-600">A Rendeletek menüpont alatt található a teljes gyűjtemény, kereshető formában.</div>
+            <div class="mt-2 text-sm text-neutral-600">Lépjen a <a class="text-blue-500" href="#services">Szolgáltatások</a> menüpontra, és válassza az online ügyintézést. Regisztráció után hozzáférhet űrlapokhoz és státuszokhoz.</div>
           </details>
           <details class="faq-item bg-white p-4 rounded shadow reveal" style="transition-delay:.06s">
             <summary class="font-semibold">Milyen események lesznek idén?</summary>
-            <div class="mt-2 text-sm text-neutral-600">A Hírek és Események szekcióban folyamatosan frissítjük a programokat és helyszíneket.</div>
+            <div class="mt-2 text-sm text-neutral-600">A <a class="text-blue-500" href="#news">Hírek és Események</a> szekcióban folyamatosan frissítjük a programokat és helyszíneket.</div>
           </details>
         </div>
       </div>
@@ -343,12 +386,28 @@
       </div>
     </section>
 
+    <section id="map" class="py-16 px-6 bg-neutral-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">Kisvárda Térképe</h2>
+        <p class="text-neutral-600 mb-6 text-center">Fedezze fel Kisvárdát a térképen!</p>
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10863.123456789!2d22.083333!3d48.216667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4738f123456789ab%3A0x123456789abcdef!2sKisv%C3%A1rda!5e0!3m2!1shu!2shu!4v1691234567890" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="bg-neutral-900 text-white py-8 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="text-sm">© Kisvárda Minden jog fenntartva</div>
-      <div class="text-sm">Adatvédelem · Impresszum · Elérhetőség</div>
+      <div class="text-sm"><a href="#main">© Kisvárda Minden jog fenntartva</a></div>
     </div>
   </footer>
 
